@@ -1,0 +1,65 @@
+﻿<Window x:Class="TeatroQuatroSBS.MVVM.View.Windows.CurrentSceneWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:local="clr-namespace:TeatroQuatroSBS.MVVM.View.Windows"
+        xmlns:vm="clr-namespace:TeatroQuatroSBS.MVVM.ViewModel"
+        mc:Ignorable="d"
+        Title="Teatro Quatro - Scenes" Height="350" Width="250"
+             d:DataContext="{d:DesignInstance vm:PlayerViewModel,
+                                     IsDesignTimeCreatable=False}"
+             Topmost="True"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#202020"
+        
+        >
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ui:TitleBar
+            Title="Teatro Quatro | Scene 1"
+            Grid.Row="0" ShowMinimize="False" ShowMaximize="False">
+        </ui:TitleBar>
+
+        <Grid Grid.Row="1" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="1" Margin="5">
+                <CheckBox IsChecked="True" Content="Scene 1"/>
+                <CheckBox IsChecked="True" Content="Scene 2"/>
+                <CheckBox IsChecked="True" Content="Scene 3"/>
+                <CheckBox IsChecked="True" Content="Scene 4"/>
+                <CheckBox IsChecked="True" Content="Scene 5"/>
+                <CheckBox IsChecked="True" Content="Scene 6"/>
+                <CheckBox IsChecked="True" Content="Scene 7"/>
+                <CheckBox IsChecked="True" Content="Scene 8"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.Row="1" Margin="5">
+                <CheckBox IsChecked="True" Content="Scene 9"/>
+                <CheckBox IsChecked="True" Content="Scene 10"/>
+                <CheckBox IsChecked="True" Content="Scene 11"/>
+                <CheckBox IsChecked="True" Content="Scene 12"/>
+                <CheckBox IsChecked="True" Content="Scene 13"/>
+                <CheckBox IsChecked="True" Content="Scene 14"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
