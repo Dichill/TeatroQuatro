@@ -18,5 +18,5 @@
 - Easy to Configure
 
 ## Other Information
-This software was made in just a span of 2 - 3 days, so there might be bugs or features that might seem like bugs. This was made for our theatrical in the University of Negros Occidental - Recoletos commanded by our director, John Andrei Balboa.
+This software was made in just a span of 2 - 3 days, so there might be bugs or features that might seem like bugs. This was made for our theatrical play in the University of Negros Occidental - Recoletos commanded by our director, John Andrei Balboa.
 
